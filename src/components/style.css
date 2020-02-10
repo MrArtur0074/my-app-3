@@ -1,0 +1,46 @@
+.iconEditStyle {
+    float: right;
+    margin-left: 0px;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    background-color: #222222;
+    grid-area: header;
+}
+
+.testProject {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "nav content";
+    grid-template-rows: 80px 1fr;
+    grid-template-columns: 2fr 10fr;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #57b3ca;
+    height: calc(100vh - 80px);
+}
+
+.content {
+    grid-area: content;
+}
+
+.navButton {
+    margin: auto;
+    margin-top: 10px;
+}
+
+.ImageIcon img{
+    margin-left: 4px;
+    margin-top: 4px;
+}
+
+.textInfoCard {
+    margin-left: 18px;
+    margin-top: 8px;
+    color: rgb(96, 94, 92);
+}
